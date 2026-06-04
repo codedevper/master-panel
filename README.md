@@ -95,10 +95,4 @@ php artisan horizon:supervisor-status supervisor-1
 
 php artisan horizon:terminate
 php artisan horizon:listen --poll
-
-sudo supervisorctl reread
-
-sudo supervisorctl update
-
-sudo supervisorctl start horizon
 ```
