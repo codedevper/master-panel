@@ -69,7 +69,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ```bash
 curl -fsSL https://raw.githubusercontent.com/codedevper/master-scripts/master/new_debian.sh | bash
 
-git clone https://github.com/codedevper/server-panel.git ./panel
+git clone https://github.com/codedevper/master-panel.git ./panel
 
 cd panel
 
