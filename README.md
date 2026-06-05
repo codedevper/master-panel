@@ -50,35 +50,12 @@ sudo supervisorctl start laravel-reverb
 sudo supervisorctl start all
 sudo supervisorctl stop all
 sudo supervisorctl restart all
-
-pkill -f hardhat
-
-php vendor/bin/envoy init localhost
-
-php vendor/bin/envoy run deploy-panel --domain=127.0.0.1
-php vendor/bin/envoy run delete-panel
-php vendor/bin/envoy run deploy-backend --domain=localhost --dbpass=password --admin_user=admin --admin_password=password --admin_email=admin@email.com
-php vendor/bin/envoy run delete-backend
-php vendor/bin/envoy run deploy-html --domain=127.0.0.1
-php vendor/bin/envoy run delete-html
-
-php artisan boost:update
-```
-
-## Upgrade to Pro
-```bash
-wp plugin install \
-woo-wallet \
-buddypress \
-wc-frontend-manager \
-wc-multivendor-marketplace \
-wc-multivendor-membership \
-wcfm-marketplace-rest-api \
---activate
 ```
 
 ## Tips
 ```bash
+pkill -f hardhat
+
 mysql -u root -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
