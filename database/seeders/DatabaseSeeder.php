@@ -18,8 +18,8 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->withPersonalTeam()->create();
 
         User::factory()->withPersonalTeam()->create([
-            'name' => 'Admin User',
-            'email' => 'admin@email.com',
+            'name' => getenv('USER'),
+            'email' => getenv('USER') . '@email.com',
             'password' => 'password',
             'current_team_id' => 1,
         ]);
