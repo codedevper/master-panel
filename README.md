@@ -9,7 +9,7 @@
 ```bash
 curl -fsSL https://raw.githubusercontent.com/codedevper/master-scripts/master/new_debian.sh | bash
 
-git clone https://github.com/codedevper/master-panel.git ./panel
+git clone https://github.com/codedevper/latest.git ./panel
 
 cd panel
 
